@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="Style.css">
   <link rel="icon" type="image/png" href="Images/Screenshot (28).png">
 </head>
+
+
 <body>
   <div class="main-app">
     <!-- Custom Cursor -->
@@ -17,6 +19,12 @@
     <!-- Header -->
     <header class="main-header">
       <div class="header-content">
+        <button class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
         <div class="logo-container">
             <a href="#home">
                 <img src="Images/Screenshot (28).png" alt="mS. Group Logo" class="logo-image">
@@ -228,7 +236,14 @@
     });
   });
 </script>
+<script>
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  const header = document.querySelector('.main-header');
 
+  menuBtn.addEventListener('click', () => {
+    header.classList.toggle('nav-open');
+  });
+</script>
 
   <script>
 
